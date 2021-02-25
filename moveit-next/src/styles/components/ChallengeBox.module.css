@@ -1,0 +1,112 @@
+.challengeContainer{
+  height: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  background: var(--white);
+
+}
+
+.challengeNotActive{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.challengeNotActive strong{
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.challengeNotActive p {
+  max-width: 70%;
+  margin-top: 3rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  line-height: 1.4;
+}
+
+.challengeNotActive p img {
+  margin-bottom: 1rem;
+}
+
+.challengeActive {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.challengeActive header {
+  padding:0 2rem 1.5rem;
+
+  font-weight: 600;
+  color: var(--blue);
+  font-size: 1.25rem;
+
+  border-bottom: 1px solid var(--gray-line);
+}
+
+.challengeActive main{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.challengeActive main strong{
+  margin: 1.5rem 0 1rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--title);
+}
+
+.challengeActive main p{
+  line-height: 1.5;
+} 
+
+.challengeActive footer{
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.challengeActive footer button{
+  border: 0;
+  height: 3rem;
+  outline: none;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: filter 0.2s;
+}
+
+.challengeActive footer button.challengeFailedButton{
+  background: var(--red);
+}
+
+.challengeActive footer button.challengeSucceedeButton{
+  background: var(--green);
+}
+
+.challengeActive footer button:hover {
+  filter: brightness(0.9);
+}
